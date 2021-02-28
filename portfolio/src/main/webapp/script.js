@@ -17,7 +17,7 @@
  */
 function addRandomGreeting() {
   const greetings =
-      ["🌮 My hometown is Puebla, México.", "♎ I was born on September 29th, 1999.", "🎹 I play the piano and I'm learning how to play the guitar.", "🤓 I like learning languages. I'm currently an English tutor.", "🐈 I love cats and I would like to adopt one someday.", '🎮 My favorite videogame is The Last of Us.', '🎬 My favorite movies are The Others, Fightclub, and Inglorious Basterds.', "🐶 I named my dog Kala after Tarzan's mom.", "😀 I have an older brother and a younger sister.", "📸 I enjoy taking pictures.", "🐿 Some friends and family members say I remind them of a squirrel."];
+      ["🌮 My hometown is Puebla, México.", "♎ I was born on September 29th, 1999.", "🎹 I play the piano and I'm learning how to play the guitar.", "🤓 I like learning languages. I'm currently an English tutor.", "🐈 I love cats and I would like to adopt one someday.", '🎮 My favorite videogame is The Last of Us.', '🎬 My favorite movies are The Others, Fightclub, and Inglorious Basterds.', "🐶 I named my dog Kala after Tarzan's mom.", "😀 I have an older brother and a younger sister.", "📸 I enjoy taking pictures.", "🐿 Some of my friends say I remind them of a squirrel.", "🎨 I like to draw but I don't do it very often.", "🎧 I like a lot of different music genres, but some of my favorite artists are Coldplay, Radiohead, Tame Impala, Avenged Sevenfold and The 1975."];
 
   // Pick a random greeting.
   const greeting = greetings[Math.floor(Math.random() * greetings.length)];
