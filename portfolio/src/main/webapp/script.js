@@ -17,12 +17,27 @@
  */
 function addRandomGreeting() {
   const greetings =
-      ['My hometown is Puebla, México.', 'I was born in 1999.', 'I play the piano.', 'I like learning languages!', "I love cats and I would like to adopt one someday.", 'My favorite videogame is The Last of Us.', 'The Others is one of my favorite movies.'];
+      ["🌮 My hometown is Puebla, México.", "♎ I was born on September 29th, 1999.", "🎹 I play the piano and I'm learning how to play the guitar.", "🤓 I like learning languages. I'm currently an English tutor.", "🐈 I love cats and I would like to adopt one someday.", '🎮 My favorite videogame is The Last of Us.', '🎬 My favorite movies are The Others, Fightclub, and Inglorious Basterds.', "🐶 I named my dog Kala after Tarzan's mom.", "😀 I have an older brother and a younger sister.", "📸 I enjoy taking pictures.", "🐿 Some friends and family members say I remind them of a squirrel."];
 
   // Pick a random greeting.
   const greeting = greetings[Math.floor(Math.random() * greetings.length)];
 
   // Add it to the page.
-  const greetingContainer = document.getElementById('greeting-container');
+  const greetingContainer = document.getElementById('fact-container');
   greetingContainer.innerText = greeting;
+}
+
+function randomizeImage() {
+  // The images directory contains 13 images, so generate a random index between
+  // 1 and 13.
+  const imageIndex = Math.floor(Math.random() * 13) + 1;
+  const imgUrl = 'images/kala/kala-' + imageIndex + '.jpg';
+
+  const imgElement = document.createElement('img');
+  imgElement.src = imgUrl;
+
+  const imageContainer = document.getElementById('kala-random');
+  // Remove the previous image.
+  imageContainer.innerHTML = '';
+  imageContainer.appendChild(imgElement);
 }
