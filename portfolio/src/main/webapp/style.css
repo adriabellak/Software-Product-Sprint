@@ -101,19 +101,47 @@ h3 {
 }
 
 #album-covers {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 #album-covers img {
-    width: 150px;
-    height: 150;
-    transition-duration: 0.5s;
-    cursor: pointer;
-    padding: 25px 40px;
+  width: 150px;
+  height: 150;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  padding: 25px 40px;
 }
 
 #album-covers img:hover {
-    width: 160px;
-    height: 160px;
+  width: 160px;
+  height: 160px;
+}
+
+#gallery-text {
+  text-align: center;
+  justify-items: center;
+}
+
+#vsco {
+  width: 120px;
+  height: 120px;
+}
+
+#gallery {
+  display: flex;
+  justify-content: space-between;
+}
+
+#gallery div {
+  width: 400px;
+}
+
+.container {
+  justify-items: center;
+}
+
+.container img{
+  width: 400px;
+  padding: 25px 0px;
 }
