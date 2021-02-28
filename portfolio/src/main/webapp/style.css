@@ -45,7 +45,7 @@ h3 {
 
 #me {
   height: 450px;
-  border-radius: 230px;
+  border-radius: 50%;
   padding-top: 15px;
 }
 
@@ -95,7 +95,7 @@ h3 {
   width:  450px;
   height: 450px;
   object-fit: cover;
-  border-radius: 230px;
+  border-radius: 50%;
   padding-top: 15px;
   padding-bottom: 25px;
 }
@@ -144,4 +144,9 @@ h3 {
 .container img{
   width: 400px;
   padding: 25px 0px;
+}
+
+#contact img{
+  width: 300px;
+  padding: 30px;
 }
