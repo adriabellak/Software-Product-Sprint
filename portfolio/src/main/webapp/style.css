@@ -118,6 +118,16 @@ h3 {
   height: 310px;
 }
 
+#drawings {
+  display: flex;
+  justify-content: space-between;
+}
+
+#drawings img{
+  width: 300px;
+  padding: 20px;
+}
+
 #gallery-text {
   text-align: center;
   justify-items: center;
