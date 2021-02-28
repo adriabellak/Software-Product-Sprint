@@ -146,6 +146,15 @@ h3 {
   padding: 25px 0px;
 }
 
+dt {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+dd {
+  font-size: 28px;
+}
+
 #contact img{
   width: 300px;
   padding: 30px;
