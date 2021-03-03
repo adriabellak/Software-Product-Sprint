@@ -41,3 +41,14 @@ function randomizeImage() {
   imageContainer.innerHTML = '';
   imageContainer.appendChild(imgElement);
 }
+
+// Fetch function
+async function showServlet() {
+    const serverResponse = await fetch("/first");
+
+    const responseText = await serverResponse.text();
+
+    const container = document.getElementById('servlet-text-container');
+    
+    container.innerText = responseText;
+}
