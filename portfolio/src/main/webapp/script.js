@@ -46,9 +46,14 @@ function randomizeImage() {
 async function showServlet() {
     const serverResponse = await fetch("/first");
 
-    const responseText = await serverResponse.text();
+    const responseJson = await serverResponse.json();
 
     const container = document.getElementById('servlet-text-container');
-    
-    container.innerText = responseText;
+
+    const jsonLength = Object.keys(responseJson).length;
+
+    const randomMessage = responseJson[Math.floor(Math.random() * jsonLength)];
+
+    container.innerText = randomMessage;
 }
+
