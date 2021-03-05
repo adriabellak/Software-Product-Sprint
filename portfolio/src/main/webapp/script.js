@@ -43,7 +43,7 @@ function randomizeImage() {
 }
 
 // Fetch function
-async function showServlet() {
+async function randomSongRecommendation() {
     const serverResponse = await fetch("/songs");
 
     const responseJson = await serverResponse.json();
@@ -52,8 +52,8 @@ async function showServlet() {
 
     const jsonLength = Object.keys(responseJson).length;
 
-    const randomMessage = responseJson[Math.floor(Math.random() * jsonLength)];
+    const randomSong = responseJson[Math.floor(Math.random() * jsonLength)];
 
-    container.innerText = randomMessage;
+    container.innerText = randomSong;
 }
 
