@@ -19,16 +19,29 @@ public class FirstServlet extends HttpServlet {
     
     // Create ArrayList and add messages
     ArrayList<String> messages = new ArrayList<String>();
-    String msg1 = "message 1";
-    String msg2 = "message 2";
-    String msg3 = "message 3";
-    String msg4 = "message 4";
-    String msg5 = "message 5";
-    messages.add(msg1);
-    messages.add(msg2);
-    messages.add(msg3);
-    messages.add(msg4);
-    messages.add(msg5);
+    messages.add("Man of War - Radiohead");
+    messages.add("Codex - Radiohead");
+    messages.add("Decks Dark - Radiohead");
+    messages.add("Eternal Summer - The Strokes");
+    messages.add("The Adults Are Talking - The Strokes");
+    messages.add("Welcome to Japan - The Strokes");
+    messages.add("At The Door - The Strokes");
+    messages.add("Bad Decisions - The Strokes");
+    messages.add("Disciples - Tame Impala");
+    messages.add("Borderline - Tame Impala");
+    messages.add("Taxi's Here - Tame Impala");
+    messages.add("Posthumous Forgiveness - Tame Impala");
+    messages.add("List Of People (To Try And Forget About) - Tame Impala");
+    messages.add("Only in My Dreams - The Marias");
+    messages.add("I Like It - The Marias");
+    messages.add("I Don't Know You - The Marias");
+    messages.add("Like You Do - Joji");
+    messages.add("On Melancholy Hill - Gorillaz");
+    messages.add("Imagination - Foster The People");
+    messages.add("Social Cues - Cage The Elephant");
+    messages.add("Tokyo Smoke - Cage The Elephant");
+    messages.add("Sweetie Little Jean - Cage The Elephant");
+    messages.add("Time in a Bottle - Jim Croce");
 
     // Convert to json using Gson
     Gson gson = new Gson();
