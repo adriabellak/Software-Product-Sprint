@@ -14,11 +14,18 @@ public class FormHandlerServlet extends HttpServlet {
 
     // Get the value entered in the form.
     String textValue = request.getParameter("text-input");
+    String nameValue = request.getParameter("name-input");
 
     // Print the value so you can see it in the server logs.
-    System.out.println("You submitted: " + textValue);
-
     // Write the value to the response so the user can see it.
-    response.getWriter().println("You submitted: " + textValue);
+    // Check if a name was given
+    if (nameValue != null && !nameValue.trim().isEmpty()){
+      System.out.println(nameValue + " submitted: " + textValue);
+      response.getWriter().println(nameValue + ", you submitted: " + textValue);
+    }
+    else {
+      System.out.println("Somebody (anonymously) submitted: " + textValue);
+      response.getWriter().println("You submitted: " + textValue);
+    }
   }
 }
