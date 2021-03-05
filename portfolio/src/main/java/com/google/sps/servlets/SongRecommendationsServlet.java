@@ -11,8 +11,8 @@ import com.google.gson.Gson;
 import java.util.ArrayList; 
 
 /** Handles requests sent to the /hello URL. Try running a server and navigating to /hello! */
-@WebServlet("/first")
-public class FirstServlet extends HttpServlet {
+@WebServlet("/songs")
+public class SongRecommendationsServlet extends HttpServlet {
 
   @Override
   public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
