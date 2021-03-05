@@ -44,7 +44,7 @@ function randomizeImage() {
 
 // Fetch function
 async function showServlet() {
-    const serverResponse = await fetch("/first");
+    const serverResponse = await fetch("/songs");
 
     const responseJson = await serverResponse.json();
 
