@@ -118,6 +118,10 @@ h3 {
   height: 310px;
 }
 
+#servlet-text-container {
+  font-style: italic;
+}
+
 #drawings {
   display: flex;
   justify-content: space-between;
