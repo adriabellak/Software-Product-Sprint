@@ -57,3 +57,24 @@ async function randomSongRecommendation() {
     container.innerText = randomSong;
 }
 
+// Fetch songs from server and add them to the page
+async function loadSongsFromUsers() {
+    const serverResponse = await fetch("/load-songs");
+
+    const responseJson = await serverResponse.json();
+
+    const container = document.getElementById('user-songs-list');
+
+    container.textContent = '';
+
+    for (i = 0; i < Object.keys(responseJson).length; i++) {
+        container.appendChild(createSongElement(responseJson[i]));
+    }
+}
+
+function createSongElement(song) {
+    const songElement = document.createElement('li');
+    songElement.className = 'user-song';
+    songElement.innerText = song;
+    return songElement;
+}
