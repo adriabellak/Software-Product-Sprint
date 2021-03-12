@@ -19,17 +19,17 @@ public class SongFromUser extends HttpServlet {
   public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
     // Get the value entered in the form.
-    String song = request.getParameter("song-input");
+    String title = request.getParameter("title-input");
     String artist = request.getParameter("artist-input");
 
     response.getWriter().println("Thanks for the recommendation!");
 
     // Datastore
     Datastore datastore = DatastoreOptions.getDefaultInstance().getService();
-    KeyFactory keyFactory = datastore.newKeyFactory().setKind("Song Recommendation");
+    KeyFactory keyFactory = datastore.newKeyFactory().setKind("Song");
     FullEntity songEntity =
         Entity.newBuilder(keyFactory.newKey())
-            .set("song", song)
+            .set("title", title)
             .set("artist", artist)
             .build();
     datastore.put(songEntity);
