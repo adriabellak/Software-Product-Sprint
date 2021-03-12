@@ -69,6 +69,12 @@
           <button class="button" onclick="randomSongRecommendation()">Get song recommendation</button>
           <p id="servlet-text-container"></p>
         </div>
+        <p>Also, please feel free to send me your own song recommendation! Type in your favorite song or a song that you think I might like.</p>
+        <form action="/user-song" method="POST" target="_blank">
+          <input type="text" id="song-input" name="song-input" placeholder="Song"><br><br>
+          <input type="text" id="artist-input" name="artist-input" placeholder="Artist"><br><br>
+          <input type="submit" />
+        </form>
 
         <p> I am not a pro, but I really enjoy <b>taking pictures</b>. I like to photograph things that I find pretty, but I also like to photograph whatever I happen to be seeing when I'm having a happy or special moment. You can visit my photo gallery if you want to see some of my pictures.</p>
         <a href="gallery.html">
